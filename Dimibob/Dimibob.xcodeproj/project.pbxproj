@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA290A571E9C58BA000A68CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA290A561E9C58BA000A68CE /* AppDelegate.swift */; };
+		BA290A591E9C58BA000A68CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA290A581E9C58BA000A68CE /* ViewController.swift */; };
+		BA290A5B1E9C58BA000A68CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA290A5A1E9C58BA000A68CE /* Assets.xcassets */; };
+		BA290A5E1E9C58BA000A68CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA290A5C1E9C58BA000A68CE /* Main.storyboard */; };
+		BA290A691E9C58BB000A68CE /* DimibobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA290A681E9C58BB000A68CE /* DimibobTests.swift */; };
+		BA290A741E9C58BB000A68CE /* DimibobUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA290A731E9C58BB000A68CE /* DimibobUITests.swift */; };
+		BA290A881E9C595B000A68CE /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA290A871E9C595B000A68CE /* NotificationCenter.framework */; };
+		BA290A8D1E9C595B000A68CE /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA290A8C1E9C595B000A68CE /* TodayViewController.swift */; };
+		BA290A901E9C595B000A68CE /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA290A8E1E9C595B000A68CE /* TodayViewController.xib */; };
+		BA290A941E9C595B000A68CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA290A921E9C595B000A68CE /* InfoPlist.strings */; };
+		BA290A971E9C595B000A68CE /* Dimibob Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BA290A851E9C595B000A68CE /* Dimibob Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BA63E62C1E9D0419005FAF96 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA63E62B1E9D0419005FAF96 /* Sparkle.framework */; };
+		BAFD19931E9D07BB00346293 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BA63E62B1E9D0419005FAF96 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BAFD19941E9D0BDC00346293 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA63E62B1E9D0419005FAF96 /* Sparkle.framework */; };
+		BAFD19971E9D0BF800346293 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFD19961E9D0BF800346293 /* Test.m */; };
+		BAFD19991E9D0D7600346293 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = BAFD19981E9D0D7600346293 /* dsa_pub.pem */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA290A651E9C58BB000A68CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA290A4B1E9C58BA000A68CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA290A521E9C58BA000A68CE;
+			remoteInfo = Dimibob;
+		};
+		BA290A701E9C58BB000A68CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA290A4B1E9C58BA000A68CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA290A521E9C58BA000A68CE;
+			remoteInfo = Dimibob;
+		};
+		BA290A951E9C595B000A68CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA290A4B1E9C58BA000A68CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA290A841E9C595B000A68CE;
+			remoteInfo = "Dimibob Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA290A9B1E9C595B000A68CE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BA290A971E9C595B000A68CE /* Dimibob Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAFD19921E9D079F00346293 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BAFD19931E9D07BB00346293 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BA1E38AA1E9D06D1008A78CE /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
+		BA290A531E9C58BA000A68CE /* Dimibob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dimibob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA290A561E9C58BA000A68CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA290A581E9C58BA000A68CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA290A5A1E9C58BA000A68CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA290A5D1E9C58BA000A68CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA290A5F1E9C58BA000A68CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA290A641E9C58BB000A68CE /* DimibobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DimibobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA290A681E9C58BB000A68CE /* DimibobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimibobTests.swift; sourceTree = "<group>"; };
+		BA290A6A1E9C58BB000A68CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA290A6F1E9C58BB000A68CE /* DimibobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DimibobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA290A731E9C58BB000A68CE /* DimibobUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimibobUITests.swift; sourceTree = "<group>"; };
+		BA290A751E9C58BB000A68CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA290A851E9C595B000A68CE /* Dimibob Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Dimibob Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA290A871E9C595B000A68CE /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		BA290A8B1E9C595B000A68CE /* Dimibob_Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dimibob_Widget.entitlements; sourceTree = "<group>"; };
+		BA290A8C1E9C595B000A68CE /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		BA290A8F1E9C595B000A68CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		BA290A911E9C595B000A68CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA290A931E9C595B000A68CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BA63E62B1E9D0419005FAF96 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
+		BA63E62D1E9D04E9005FAF96 /* Dimibob-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dimibob-Bridging-Header.h"; sourceTree = "<group>"; };
+		BAB31E291E9C8580002EFED9 /* Dimibob.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dimibob.entitlements; sourceTree = "<group>"; };
+		BAB31E4C1E9CD105002EFED9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BAB31E4E1E9CD10F002EFED9 /* FlashlightKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlashlightKit.framework; path = Frameworks/FlashlightKit.framework; sourceTree = "<group>"; };
+		BAFD19951E9D0BF800346293 /* Dimibob Widget-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dimibob Widget-Bridging-Header.h"; sourceTree = "<group>"; };
+		BAFD19961E9D0BF800346293 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		BAFD19981E9D0D7600346293 /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA290A501E9C58BA000A68CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA63E62C1E9D0419005FAF96 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA290A611E9C58BB000A68CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA290A6C1E9C58BB000A68CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA290A821E9C595B000A68CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA290A881E9C595B000A68CE /* NotificationCenter.framework in Frameworks */,
+				BAFD19941E9D0BDC00346293 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA290A4A1E9C58BA000A68CE = {
+			isa = PBXGroup;
+			children = (
+				BAFD19981E9D0D7600346293 /* dsa_pub.pem */,
+				BA290A551E9C58BA000A68CE /* Dimibob */,
+				BA290A671E9C58BB000A68CE /* DimibobTests */,
+				BA290A721E9C58BB000A68CE /* DimibobUITests */,
+				BA290A891E9C595B000A68CE /* Dimibob Widget */,
+				BA290A861E9C595B000A68CE /* Frameworks */,
+				BA290A541E9C58BA000A68CE /* Products */,
+				BA63E62D1E9D04E9005FAF96 /* Dimibob-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		BA290A541E9C58BA000A68CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA290A531E9C58BA000A68CE /* Dimibob.app */,
+				BA290A641E9C58BB000A68CE /* DimibobTests.xctest */,
+				BA290A6F1E9C58BB000A68CE /* DimibobUITests.xctest */,
+				BA290A851E9C595B000A68CE /* Dimibob Widget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA290A551E9C58BA000A68CE /* Dimibob */ = {
+			isa = PBXGroup;
+			children = (
+				BAB31E291E9C8580002EFED9 /* Dimibob.entitlements */,
+				BA290A561E9C58BA000A68CE /* AppDelegate.swift */,
+				BA290A581E9C58BA000A68CE /* ViewController.swift */,
+				BA290A5A1E9C58BA000A68CE /* Assets.xcassets */,
+				BA290A5C1E9C58BA000A68CE /* Main.storyboard */,
+				BA290A5F1E9C58BA000A68CE /* Info.plist */,
+			);
+			path = Dimibob;
+			sourceTree = "<group>";
+		};
+		BA290A671E9C58BB000A68CE /* DimibobTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA290A681E9C58BB000A68CE /* DimibobTests.swift */,
+				BA290A6A1E9C58BB000A68CE /* Info.plist */,
+			);
+			path = DimibobTests;
+			sourceTree = "<group>";
+		};
+		BA290A721E9C58BB000A68CE /* DimibobUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA290A731E9C58BB000A68CE /* DimibobUITests.swift */,
+				BA290A751E9C58BB000A68CE /* Info.plist */,
+			);
+			path = DimibobUITests;
+			sourceTree = "<group>";
+		};
+		BA290A861E9C595B000A68CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA1E38AA1E9D06D1008A78CE /* Sparkle.framework */,
+				BA63E62B1E9D0419005FAF96 /* Sparkle.framework */,
+				BAB31E4E1E9CD10F002EFED9 /* FlashlightKit.framework */,
+				BAB31E4C1E9CD105002EFED9 /* Cocoa.framework */,
+				BA290A871E9C595B000A68CE /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA290A891E9C595B000A68CE /* Dimibob Widget */ = {
+			isa = PBXGroup;
+			children = (
+				BA290A8C1E9C595B000A68CE /* TodayViewController.swift */,
+				BA290A8E1E9C595B000A68CE /* TodayViewController.xib */,
+				BA290A911E9C595B000A68CE /* Info.plist */,
+				BA290A921E9C595B000A68CE /* InfoPlist.strings */,
+				BA290A8A1E9C595B000A68CE /* Supporting Files */,
+				BAFD19961E9D0BF800346293 /* Test.m */,
+				BAFD19951E9D0BF800346293 /* Dimibob Widget-Bridging-Header.h */,
+			);
+			path = "Dimibob Widget";
+			sourceTree = "<group>";
+		};
+		BA290A8A1E9C595B000A68CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA290A8B1E9C595B000A68CE /* Dimibob_Widget.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA290A521E9C58BA000A68CE /* Dimibob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA290A781E9C58BB000A68CE /* Build configuration list for PBXNativeTarget "Dimibob" */;
+			buildPhases = (
+				BA290A4F1E9C58BA000A68CE /* Sources */,
+				BA290A501E9C58BA000A68CE /* Frameworks */,
+				BA290A511E9C58BA000A68CE /* Resources */,
+				BA290A9B1E9C595B000A68CE /* Embed App Extensions */,
+				BAFD19921E9D079F00346293 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA290A961E9C595B000A68CE /* PBXTargetDependency */,
+			);
+			name = Dimibob;
+			productName = Dimibob;
+			productReference = BA290A531E9C58BA000A68CE /* Dimibob.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA290A631E9C58BB000A68CE /* DimibobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA290A7B1E9C58BB000A68CE /* Build configuration list for PBXNativeTarget "DimibobTests" */;
+			buildPhases = (
+				BA290A601E9C58BB000A68CE /* Sources */,
+				BA290A611E9C58BB000A68CE /* Frameworks */,
+				BA290A621E9C58BB000A68CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA290A661E9C58BB000A68CE /* PBXTargetDependency */,
+			);
+			name = DimibobTests;
+			productName = DimibobTests;
+			productReference = BA290A641E9C58BB000A68CE /* DimibobTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA290A6E1E9C58BB000A68CE /* DimibobUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA290A7E1E9C58BB000A68CE /* Build configuration list for PBXNativeTarget "DimibobUITests" */;
+			buildPhases = (
+				BA290A6B1E9C58BB000A68CE /* Sources */,
+				BA290A6C1E9C58BB000A68CE /* Frameworks */,
+				BA290A6D1E9C58BB000A68CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA290A711E9C58BB000A68CE /* PBXTargetDependency */,
+			);
+			name = DimibobUITests;
+			productName = DimibobUITests;
+			productReference = BA290A6F1E9C58BB000A68CE /* DimibobUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BA290A841E9C595B000A68CE /* Dimibob Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA290A981E9C595B000A68CE /* Build configuration list for PBXNativeTarget "Dimibob Widget" */;
+			buildPhases = (
+				BA290A811E9C595B000A68CE /* Sources */,
+				BA290A821E9C595B000A68CE /* Frameworks */,
+				BA290A831E9C595B000A68CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dimibob Widget";
+			productName = "Dimibob Widget";
+			productReference = BA290A851E9C595B000A68CE /* Dimibob Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA290A4B1E9C58BA000A68CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "DoraDora(상훈)";
+				TargetAttributes = {
+					BA290A521E9C58BA000A68CE = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = T7Q559P978;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					BA290A631E9C58BB000A68CE = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = T7Q559P978;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA290A521E9C58BA000A68CE;
+					};
+					BA290A6E1E9C58BB000A68CE = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = T7Q559P978;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA290A521E9C58BA000A68CE;
+					};
+					BA290A841E9C595B000A68CE = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = T7Q559P978;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BA290A4E1E9C58BA000A68CE /* Build configuration list for PBXProject "Dimibob" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA290A4A1E9C58BA000A68CE;
+			productRefGroup = BA290A541E9C58BA000A68CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA290A521E9C58BA000A68CE /* Dimibob */,
+				BA290A631E9C58BB000A68CE /* DimibobTests */,
+				BA290A6E1E9C58BB000A68CE /* DimibobUITests */,
+				BA290A841E9C595B000A68CE /* Dimibob Widget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA290A511E9C58BA000A68CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA290A5B1E9C58BA000A68CE /* Assets.xcassets in Resources */,
+				BA290A5E1E9C58BA000A68CE /* Main.storyboard in Resources */,
+				BAFD19991E9D0D7600346293 /* dsa_pub.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA290A621E9C58BB000A68CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA290A6D1E9C58BB000A68CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA290A831E9C595B000A68CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA290A901E9C595B000A68CE /* TodayViewController.xib in Resources */,
+				BA290A941E9C595B000A68CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA290A4F1E9C58BA000A68CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA290A591E9C58BA000A68CE /* ViewController.swift in Sources */,
+				BA290A571E9C58BA000A68CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA290A601E9C58BB000A68CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA290A691E9C58BB000A68CE /* DimibobTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA290A6B1E9C58BB000A68CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA290A741E9C58BB000A68CE /* DimibobUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA290A811E9C595B000A68CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA290A8D1E9C595B000A68CE /* TodayViewController.swift in Sources */,
+				BAFD19971E9D0BF800346293 /* Test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA290A661E9C58BB000A68CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA290A521E9C58BA000A68CE /* Dimibob */;
+			targetProxy = BA290A651E9C58BB000A68CE /* PBXContainerItemProxy */;
+		};
+		BA290A711E9C58BB000A68CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA290A521E9C58BA000A68CE /* Dimibob */;
+			targetProxy = BA290A701E9C58BB000A68CE /* PBXContainerItemProxy */;
+		};
+		BA290A961E9C595B000A68CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA290A841E9C595B000A68CE /* Dimibob Widget */;
+			targetProxy = BA290A951E9C595B000A68CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA290A5C1E9C58BA000A68CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA290A5D1E9C58BA000A68CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA290A8E1E9C595B000A68CE /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA290A8F1E9C595B000A68CE /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		BA290A921E9C595B000A68CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA290A931E9C595B000A68CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA290A761E9C58BB000A68CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA290A771E9C58BB000A68CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		BA290A791E9C58BB000A68CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Dimibob/Dimibob.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T7Q559P978;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = Dimibob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dimibob-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BA290A7A1E9C58BB000A68CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Dimibob/Dimibob.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T7Q559P978;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = Dimibob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dimibob-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BA290A7C1E9C58BB000A68CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T7Q559P978;
+				INFOPLIST_FILE = DimibobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac.DimibobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dimibob.app/Contents/MacOS/Dimibob";
+			};
+			name = Debug;
+		};
+		BA290A7D1E9C58BB000A68CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T7Q559P978;
+				INFOPLIST_FILE = DimibobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac.DimibobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dimibob.app/Contents/MacOS/Dimibob";
+			};
+			name = Release;
+		};
+		BA290A7F1E9C58BB000A68CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T7Q559P978;
+				INFOPLIST_FILE = DimibobUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac.DimibobUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Dimibob;
+			};
+			name = Debug;
+		};
+		BA290A801E9C58BB000A68CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T7Q559P978;
+				INFOPLIST_FILE = DimibobUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac.DimibobUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Dimibob;
+			};
+			name = Release;
+		};
+		BA290A991E9C595B000A68CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Dimibob Widget/Dimibob_Widget.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T7Q559P978;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Dimibob Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Dimibob Widget/Dimibob Widget-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BA290A9A1E9C595B000A68CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Dimibob Widget/Dimibob_Widget.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T7Q559P978;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Dimibob Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Dimibob Widget/Dimibob Widget-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA290A4E1E9C58BA000A68CE /* Build configuration list for PBXProject "Dimibob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA290A761E9C58BB000A68CE /* Debug */,
+				BA290A771E9C58BB000A68CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA290A781E9C58BB000A68CE /* Build configuration list for PBXNativeTarget "Dimibob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA290A791E9C58BB000A68CE /* Debug */,
+				BA290A7A1E9C58BB000A68CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA290A7B1E9C58BB000A68CE /* Build configuration list for PBXNativeTarget "DimibobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA290A7C1E9C58BB000A68CE /* Debug */,
+				BA290A7D1E9C58BB000A68CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA290A7E1E9C58BB000A68CE /* Build configuration list for PBXNativeTarget "DimibobUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA290A7F1E9C58BB000A68CE /* Debug */,
+				BA290A801E9C58BB000A68CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA290A981E9C595B000A68CE /* Build configuration list for PBXNativeTarget "Dimibob Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA290A991E9C595B000A68CE /* Debug */,
+				BA290A9A1E9C595B000A68CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA290A4B1E9C58BA000A68CE /* Project object */;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Dimibob Widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Dimibob.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BA290A521E9C58BA000A68CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA290A631E9C58BB000A68CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA290A6E1E9C58BB000A68CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA290A841E9C595B000A68CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAB31E2D1E9CBF45002EFED9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAB31E451E9CD0DA002EFED9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

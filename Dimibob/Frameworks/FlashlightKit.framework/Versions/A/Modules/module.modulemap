@@ -1,0 +1,6 @@
+framework module FlashlightKit {
+  umbrella header "FlashlightKit.h"
+
+  export *
+  module * { export * }
+}
