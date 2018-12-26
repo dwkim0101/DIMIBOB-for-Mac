@@ -24,7 +24,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
     @IBOutlet weak var loadingLabel: NSTextField?
     
     var b : Bool = false
-
+    
     override var nibName: String? {
         return "TodayViewController"
     }
@@ -41,7 +41,17 @@ class TodayViewController: NSViewController, NCWidgetProviding {
         
         loadingLabel?.alphaValue = 1
         
-        let url = URL(string: "http://dimigo.in/pages/dimibob_getdata.php")
+        let now = Date().today
+        let date = DateFormatter()
+        date.locale = Locale(identifier: "ko_kr")
+        date.timeZone = TimeZone(abbreviation: "KST") // "2018-03-21 18:07:27"
+        date.dateFormat = "yyyyMMdd"
+        print(date)
+        let kr = date.string(from: now)
+        let urlString = "https://dev-api.dimigo.in/dimibobs/"
+        let urlFinalizedString = urlString + kr
+        
+        let url = URL(string: urlFinalizedString)
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with:request, completionHandler: {(data, response, error) in
@@ -77,7 +87,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             }
         }).resume()
     }
-
+    
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(2 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)) {
             self.loadBob()
@@ -90,15 +100,35 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             completionHandler(.newData)
         }
         
-    
+        
         // Update your data and prepare for a snapshot. Call completion handler when you are done
         // with NoData if nothing has changed or NewData if there is new data since the last
         // time we called you
         completionHandler(.noData)
         
     }
-
+    
     override func viewWillTransition(to newSize: NSSize) {
         self.preferredContentSize = CGSize(width: 320, height: 220)
+    }
+}
+
+extension Date {
+    
+    var today: Date {
+        return Calendar.current.date(byAdding: .day, value: 0, to: noon)!
+    }
+    var tommorow : Date{
+        return Calendar.current.date(byAdding: .day, value: 1, to: noon)!
+    }
+    
+    var noon: Date {
+        return Calendar.current.date(bySettingHour: 12, minute: 0, second: 0, of: self)!
+    }
+    var month: Int {
+        return Calendar.current.component(.month,  from: self)
+    }
+    var isLastDayOfMonth: Bool {
+        return tommorow.month != month
     }
 }

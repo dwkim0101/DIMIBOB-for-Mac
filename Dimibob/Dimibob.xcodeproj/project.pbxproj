@@ -317,7 +317,7 @@
 				TargetAttributes = {
 					BA290A521E9C58BA000A68CE = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = T7Q559P978;
+						DevelopmentTeam = 9JC8F47V82;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -328,19 +328,19 @@
 					};
 					BA290A631E9C58BB000A68CE = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = T7Q559P978;
+						DevelopmentTeam = 9JC8F47V82;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BA290A521E9C58BA000A68CE;
 					};
 					BA290A6E1E9C58BB000A68CE = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = T7Q559P978;
+						DevelopmentTeam = 9JC8F47V82;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BA290A521E9C58BA000A68CE;
 					};
 					BA290A841E9C595B000A68CE = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = T7Q559P978;
+						DevelopmentTeam = 9JC8F47V82;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -587,7 +587,7 @@
 				CODE_SIGN_ENTITLEMENTS = Dimibob/Dimibob.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T7Q559P978;
+				DEVELOPMENT_TEAM = 9JC8F47V82;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -613,7 +613,7 @@
 				CODE_SIGN_ENTITLEMENTS = Dimibob/Dimibob.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T7Q559P978;
+				DEVELOPMENT_TEAM = 9JC8F47V82;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -635,7 +635,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T7Q559P978;
+				DEVELOPMENT_TEAM = 9JC8F47V82;
 				INFOPLIST_FILE = DimibobTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac.DimibobTests;
@@ -651,7 +651,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T7Q559P978;
+				DEVELOPMENT_TEAM = 9JC8F47V82;
 				INFOPLIST_FILE = DimibobTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac.DimibobTests;
@@ -666,7 +666,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T7Q559P978;
+				DEVELOPMENT_TEAM = 9JC8F47V82;
 				INFOPLIST_FILE = DimibobUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac.DimibobUITests;
@@ -681,7 +681,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T7Q559P978;
+				DEVELOPMENT_TEAM = 9JC8F47V82;
 				INFOPLIST_FILE = DimibobUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.sangs.dimigo.bob.mac.DimibobUITests;
@@ -698,7 +698,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Dimibob Widget/Dimibob_Widget.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T7Q559P978;
+				DEVELOPMENT_TEAM = 9JC8F47V82;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -722,7 +722,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Dimibob Widget/Dimibob_Widget.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = T7Q559P978;
+				DEVELOPMENT_TEAM = 9JC8F47V82;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
